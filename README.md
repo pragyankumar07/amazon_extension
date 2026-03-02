@@ -41,10 +41,11 @@ To use RapidBrowse for yourself, follow these steps to load the extension into y
 
 ## ⚙️ Configuration
 
-The extension comes pre-configured with a Gemini API key for demonstration. If you'd like to use your own:
-1. Open `src/background.js`.
-2. Replace the `GEMINI_API_KEY` constant with your own key from [Google AI Studio](https://aistudio.google.com/).
-3. Go back to `chrome://extensions/` and click the **Reload** icon on the RapidBrowse card.
+To use **RapidBrowse**, you need to provide your own Gemini API key:
+1. Obtain an API key from [Google AI Studio](https://aistudio.google.com/).
+2. Click the **RapidBrowse** extension icon in your Chrome toolbar to open the popup.
+3. Paste your key into the **Gemini API Key** field and click **Save**.
+4. The extension will now be able to process your natural language shopping requests.
 
 ---
 

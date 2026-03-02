@@ -51,13 +51,23 @@
 <body>
     <div class="logo">RapidBrowse AI</div>
     <div class="status">Assistant is Active</div>
+
+    <div class="settings-section"
+        style="margin-bottom: 20px; text-align: left; background: #2c3e50; padding: 15px; border-radius: 8px;">
+        <label for="api-key"
+            style="display: block; font-size: 12px; color: #ff9900; margin-bottom: 5px; font-weight: bold;">Gemini API
+            Key</label>
+        <div style="display: flex; gap: 8px;">
+            <input type="password" id="api-key" placeholder="Enter your key..."
+                style="flex: 1; padding: 8px; border-radius: 4px; border: 1px solid #444; background: #1a2634; color: white; font-size: 12px;">
+            <button id="save-key" style="width: auto; padding: 8px 15px; font-size: 12px;">Save</button>
+        </div>
+        <div id="save-status" style="font-size: 11px; margin-top: 5px; color: #4caf50; height: 15px;"></div>
+    </div>
+
     <button id="open-amazon">Shop on Amazon</button>
     <div class="desc">Open any Amazon search page to start using the RapidBrowse AI Assistant.</div>
-    <script>
-        document.getElementById('open-amazon').onclick = () => {
-            window.open('https://www.amazon.com/s?k=laptop', '_blank');
-        };
-    </script>
+    <script src="src/popup.js"></script>
 </body>
 
 </html>
