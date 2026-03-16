@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         body {
@@ -10,17 +11,20 @@
             color: white;
             text-align: center;
         }
+
         .logo {
             font-size: 24px;
             font-weight: bold;
             color: #ff9900;
             margin-bottom: 10px;
         }
+
         .status {
             font-size: 14px;
             color: #ccc;
             margin-bottom: 20px;
         }
+
         button {
             background: #ff9900;
             border: none;
@@ -31,9 +35,11 @@
             cursor: pointer;
             width: 100%;
         }
+
         button:hover {
             background: #e47911;
         }
+
         .desc {
             font-size: 12px;
             margin-top: 15px;
@@ -41,15 +47,17 @@
         }
     </style>
 </head>
+
 <body>
-    <div class="logo">Rufus AI Filter</div>
+    <div class="logo">RapidBrowse AI</div>
     <div class="status">Assistant is Active</div>
     <button id="open-amazon">Shop on Amazon</button>
-    <div class="desc">Open any Amazon search page to start using the Rufus AI Assistant.</div>
+    <div class="desc">Open any Amazon search page to start using the RapidBrowse AI Assistant.</div>
     <script>
         document.getElementById('open-amazon').onclick = () => {
             window.open('https://www.amazon.com/s?k=laptop', '_blank');
         };
     </script>
 </body>
+
 </html>

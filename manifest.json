@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Amazon Rufus AI Filter Assistant",
+  "name": "RapidBrowse AI Shopping Assistant",
   "version": "1.0",
-  "description": "An AI-powered shopping assistant that filters and ranks Amazon search results using natural language.",
+  "description": "A lightning-fast AI shopping assistant that filters and ranks Amazon search results using natural language.",
   "permissions": [
     "storage",
     "activeTab",
@@ -23,8 +23,12 @@
         "*://www.amazon.in/s*",
         "*://www.amazon.co.uk/s*"
       ],
-      "js": ["src/content.js"],
-      "css": ["src/styles.css"]
+      "js": [
+        "src/content.js"
+      ],
+      "css": [
+        "src/styles.css"
+      ]
     }
   ],
   "action": {
@@ -42,8 +46,14 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["src/styles.css"],
-      "matches": ["*://www.amazon.com/*", "*://www.amazon.in/*", "*://www.amazon.co.uk/*"]
+      "resources": [
+        "src/styles.css"
+      ],
+      "matches": [
+        "*://www.amazon.com/*",
+        "*://www.amazon.in/*",
+        "*://www.amazon.co.uk/*"
+      ]
     }
   ]
 }

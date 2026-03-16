@@ -7,20 +7,20 @@ const panelHTML = `
     <div class="rufus-header" id="rufus-header">
         <div class="rufus-title">
             <div class="rufus-logo">R</div>
-            Rufus AI Filter
+            RapidBrowse AI
         </div>
         <div class="rufus-toggle">▲</div>
     </div>
     <div class="rufus-content">
         <div class="rufus-chat-history" id="rufus-chat-history">
             <div class="rufus-message ai">
-                Hello! I'm Rufus. Search for something and tell me your preferences (e.g., "under $2000, 4.5+ stars").
+                Hello! I'm RapidBrowse. Search for something and tell me your preferences (e.g., "under $2000, 4.5+ stars").
             </div>
         </div>
     </div>
     <div class="rufus-footer">
         <div class="rufus-input-container">
-            <input type="text" class="rufus-input" id="rufus-input" placeholder="Ask Rufus to filter...">
+            <input type="text" class="rufus-input" id="rufus-input" placeholder="Ask RapidBrowse to filter...">
             <button class="rufus-send-btn" id="rufus-send-btn">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
@@ -160,7 +160,7 @@ function applyFilters(filters) {
             p.element.classList.add('rufus-best-match');
             const badge = document.createElement('div');
             badge.className = 'rufus-match-badge';
-            badge.textContent = index === 0 ? '🏆 Rufus Top Pick' : `Match #${index + 1}`;
+            badge.textContent = index === 0 ? '🏆 RapidBrowse Top Pick' : `Match #${index + 1}`;
             p.element.appendChild(badge);
         });
     }
@@ -185,7 +185,7 @@ function calculateAndApplyScore(product) {
         product.element.style.position = 'relative';
         product.element.appendChild(scoreBadge);
     }
-    scoreBadge.textContent = `Rufus Score: ${totalScore}`;
+    scoreBadge.textContent = `RapidBrowse Score: ${totalScore}`;
     return parseFloat(totalScore);
 }
 
